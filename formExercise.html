@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Exercise</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="">
+    <!-- first and last names -->
+    <label for="first">First Name:</label>
+    <input type="text" name="fname" id="first" placeholder="Captain" required>
+    
+    <label for="last">Last Name:</label>
+    <input type="text" name="lname" id="last" placeholder="Crunch" required>
+    <br>
+    <!-- gender -->
+    <label for="male">Male:</label>
+    <input type="radio" id="male" name="gender" value="male">
+
+    <label for="female">Female:</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <label for="other">Other:</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <br>
+    <!-- email and password -->
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="someone@example.com" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" pattern={5,10}>
+    <br>
+    <!-- birthdate -->
+    <label>Birthday:
+      <select name="month">
+        <option value="January"></option>
+        <option value="Feb"></option>
+        <option value="March"></option>
+      </select>
+  
+      <select name="day">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+  
+      <select name="year">
+        <option value="1999"></option>
+        <option value="2020"></option>
+        <option value="1265"></option>
+      </select>
+      <br>
+    </label> 
+
+    
+    <!-- terms and cond. -->
+    <label for="agreeTerms">I agree to the terms and conditions</label>
+    <input type="checkbox" name="" id="agreeTerms">
+    <br>
+    <!-- submit form -->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
